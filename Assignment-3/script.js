@@ -16,3 +16,20 @@ function countCharacters(string) {
 let array = countCharacters("ADaDd");
 console.log(`Count of A : ${array[0]}`);
 console.log(`Count of D : ${array[1]}`);
+
+
+
+//? Q3. Count the Vowels
+function countVowel(string) {
+  const vowels = "aeiou";
+  let count = 0;
+  for (let ch of string.toLowerCase()) {
+    if (vowels.includes(ch)) count++;
+  }
+
+  return count;
+}
+
+let count = countVowel("Diwaker");
+console.log(`Count of vowels : ${count}`);
+
