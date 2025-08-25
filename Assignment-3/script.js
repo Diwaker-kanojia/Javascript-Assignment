@@ -46,3 +46,15 @@ let count = countVowel("Diwaker");
 console.log(`Count of vowels : ${count}`);
 
 
+//? Q5. Find Length
+function findLength(string) {
+  let countLength = 0;
+  string.split("").forEach((element) => countLength++);
+  return countLength;
+}
+
+let stringLength = findLength("Hello, my name is Diwaker");
+console.log(`Length of String : ${stringLength}`);
+
+
+
