@@ -57,4 +57,24 @@ let stringLength = findLength("Hello, my name is Diwaker");
 console.log(`Length of String : ${stringLength}`);
 
 
+//? Q6. Find the Winner
+function findTheWinner(string) {
+  let countForAditya = 0;
+  let countForDanish = 0;
 
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === "A") {
+      countForAditya++;
+    } else {
+      countForDanish++;
+    }
+  }
+  return countForAditya > countForDanish
+    ? "Aditya"
+    : countForAditya === countForDanish
+    ? "Draw"
+    : "Danish";
+}
+
+let winner = findTheWinner("ADDAAADDDDD");
+console.log(winner);
