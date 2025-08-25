@@ -78,3 +78,13 @@ function findTheWinner(string) {
 
 let winner = findTheWinner("ADDAAADDDDD");
 console.log(winner);
+
+
+//? Q7. Join Strings
+function joinString(str1, str2) {
+  let str3 = str1 + str2;
+  return str3;
+}
+
+let str = joinString("Prep", "Bytes");
+console.log(str);
