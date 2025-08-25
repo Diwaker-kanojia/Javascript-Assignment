@@ -103,3 +103,16 @@ function isPalindrome(str) {
 
 let palindromeOrNot = isPalindrome("Malayalam");
 console.log(palindromeOrNot);
+
+
+//? Q9. Reverse the String
+function reverseString(string) {
+  let reverse = "";
+  for (let i = 0; i < string.length ; i++) {
+    reverse += string[string.length - i - 1];
+  }
+  return reverse;
+}
+
+let reverseValue = reverseString("Hello World!!!");
+console.log(reverseValue);
