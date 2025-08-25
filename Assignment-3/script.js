@@ -88,3 +88,18 @@ function joinString(str1, str2) {
 
 let str = joinString("Prep", "Bytes");
 console.log(str);
+
+
+//? Q8. palindrome Check
+function isPalindrome(str) {
+  let str1 = str.toLowerCase();
+  for (let i = 0; i < str.length; i++) {
+    if (str1[i] !== str1[str.length - i - 1]) {
+      return "String is not Palindrome";
+    }
+  }
+  return "String is Palindrome";
+}
+
+let palindromeOrNot = isPalindrome("Malayalam");
+console.log(palindromeOrNot);
