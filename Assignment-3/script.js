@@ -116,3 +116,11 @@ function reverseString(string) {
 
 let reverseValue = reverseString("Hello World!!!");
 console.log(reverseValue);
+
+
+//? Q10. Match the Strings
+function isEqual(string1, string2) {
+  return string1.toLowerCase() === string2.toLowerCase() ? "YES" : "NO";
+}
+
+console.log(isEqual("Diwaker", "diwaker"));
