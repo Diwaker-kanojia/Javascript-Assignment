@@ -30,6 +30,19 @@ function countVowel(string) {
   return count;
 }
 
+
+//? Q4. Concatenate the Strings
+function concatenateString(string1, string2) {
+  let newString = string1.concat(string2);
+  return newString;
+}
+
+let firstName = "Diwaker ";
+let lastName = "Kanojia";
+let fullName = concatenateString(firstName, lastName);
+console.log(`String After concatenate : ${fullName}`);
+
 let count = countVowel("Diwaker");
 console.log(`Count of vowels : ${count}`);
+
 
