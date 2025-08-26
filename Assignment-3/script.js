@@ -135,3 +135,10 @@ let intro = "Hi, My name is Diwaker";
 let replaceValue = replaceString(intro, "name", "self");
 console.log(replaceValue);
 
+
+//? Q12. Split the String
+function splitTheString(string) {
+  return string.split(" ");
+}
+console.log(splitTheString(intro));
+
