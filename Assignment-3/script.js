@@ -142,3 +142,33 @@ function splitTheString(string) {
 }
 console.log(splitTheString(intro));
 
+
+//? Q13. Count the Vowels and Consonants
+function countVowels(string) {
+  const vowels = "aieou";
+  let vowelCount = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (vowels.includes(string[i].toLowerCase())) {
+      vowelCount++;
+    }
+  }
+  return vowelCount;
+}
+
+function countConsonants(string) {
+  const vowels = "aieou";
+  let consonantsCount = 0;
+
+  for (let i = 0; i < string.length; i++) {
+    let ch = string[i].toLowerCase();
+    if (ch >= "a" && ch <= "z") {
+      if (!vowels.includes(ch)) {
+        consonantsCount++;
+      }
+    }
+  }
+  return consonantsCount;
+}
+
+console.log("Vowels:", countVowels("Hello World"));
+console.log("Consonants:", countConsonants("Hello World"));
