@@ -124,3 +124,14 @@ function isEqual(string1, string2) {
 }
 
 console.log(isEqual("Diwaker", "diwaker"));
+
+
+//? Q11. String Replace
+function replaceString(string, target, replace) {
+  let afterReplace = string.replace(target, replace);
+  return afterReplace;
+}
+let intro = "Hi, My name is Diwaker";
+let replaceValue = replaceString(intro, "name", "self");
+console.log(replaceValue);
+
