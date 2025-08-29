@@ -70,7 +70,3 @@ function calculateMarks(sub1, sub2, sub3) {
 
 
 calculateMarks(50,20,100);
-
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-      .then(response => response.json())
-      .then(json => console.log(json))
