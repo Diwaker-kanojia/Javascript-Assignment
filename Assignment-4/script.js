@@ -22,3 +22,24 @@ const findOccurance = (arr, key) => {
 
 const countOfOccurance = findOccurance([1, 2, 3, 2, 3, 5, 8, 3, 3], 3);
 console.log(countOfOccurance);
+
+
+//? Q4. Find sum even or odd
+const sumEvenOrOdd = (arr) => {
+  let count = [0, 0];
+  for (const number of arr) {
+    if (number % 2 === 0) {
+      count[0] += number;
+    } else {
+      count[1] += number;
+    }
+  }
+
+  return count;
+};
+
+const arr = [1, 2, 3, 4, 5, 6, 7];
+const evenOrOdd = sumEvenOrOdd(arr);
+console.log(`Sum of all Even Element : ${evenOrOdd[0]}`);
+console.log(`Sum of all Odd Element : ${evenOrOdd[1]}`);
+
