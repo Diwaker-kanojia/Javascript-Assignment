@@ -71,3 +71,11 @@ const incrementByOne = (arr) => arr.map((num) => num + 1);
 let increArray = incrementByOne([1, 2, 3, 4, 5]);
 console.log(increArray);
 
+
+//? Q8. Pass or Fail
+function passOrFail(arr) {
+  return arr.every((number) => number >= 32) ? "YES" : "NO";
+}
+
+let result = passOrFail([23, 89, 45, 98, 67, 45, 54]);
+console.log(result);
