@@ -101,3 +101,31 @@ function uniqueColorShirt(arr) {
 }
 let uniqueShirtCount = uniqueColorShirt([3, 2, 4, 1, 2, 3, 8]);
 console.log(`Number of Unique shirt : ${uniqueShirtCount}`);
+
+
+//? Q10. Min and Max
+function findMin(arr) {
+  let min = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  return min;
+}
+
+function findMax(arr) {
+  let max = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+
+const arr1 = [66, 33, 11, 44, 66, 22, 77];
+let min = findMin(arr1);
+let max = findMax(arr1);
+console.log("Min. Element : " + min);
+console.log("Max. Element : " + max);
