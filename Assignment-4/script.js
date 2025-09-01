@@ -79,3 +79,25 @@ function passOrFail(arr) {
 
 let result = passOrFail([23, 89, 45, 98, 67, 45, 54]);
 console.log(result);
+
+
+//? Q9. Unique Color Shirt
+function uniqueColorShirt(arr) {
+  let M = 0;
+  for (let i = 0; i < arr.length; i++) {
+    let count = 0;
+
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[i] === arr[j]) {
+        count++;
+      }
+    }
+
+    if (count === 1) {
+      M++;
+    }
+  }
+  return M;
+}
+let uniqueShirtCount = uniqueColorShirt([3, 2, 4, 1, 2, 3, 8]);
+console.log(`Number of Unique shirt : ${uniqueShirtCount}`);
