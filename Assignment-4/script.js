@@ -55,3 +55,12 @@ let number = [10, 20, 30, 40, 50];
 let isAvailable = findNumInlcude(number, 20);
 console.log(isAvailable);
 
+
+
+//? Q6. Higher Age
+const highAgeFunction = (arr) => {
+  return arr.filter((age) => age >= 18);
+};
+
+const highAge = highAgeFunction([11, 23, 3, 45, 72, 68]);
+console.log(highAge);
