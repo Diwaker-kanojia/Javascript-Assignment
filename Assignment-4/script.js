@@ -56,7 +56,6 @@ let isAvailable = findNumInlcude(number, 20);
 console.log(isAvailable);
 
 
-
 //? Q6. Higher Age
 const highAgeFunction = (arr) => {
   return arr.filter((age) => age >= 18);
@@ -64,3 +63,11 @@ const highAgeFunction = (arr) => {
 
 const highAge = highAgeFunction([11, 23, 3, 45, 72, 68]);
 console.log(highAge);
+
+
+//? Q7. Increment the Array Elements
+const incrementByOne = (arr) => arr.map((num) => num + 1);
+
+let increArray = incrementByOne([1, 2, 3, 4, 5]);
+console.log(increArray);
+
