@@ -39,3 +39,16 @@ function calculateSum(arr) {
 var numbersArray = [1, 13, 22, 123, 49];
 let total = calculateSum(numbersArray);
 console.log(total);
+
+//? Q4.Get the sum of two arrays…actually the sum of all their elements
+function sumOfTwoArray(arr1, arr2) {
+  return (
+    arr1.reduce((acc, value) => acc + value, 0) +
+    arr2.reduce((acc, value) => acc + value, 0)
+  );
+}
+
+let arr_1 = [3, 5, 22, 5, 7, 2, 45, 75, 89, 21, 2];
+let arr_2 = [9, 2, 42, 55, 71, 22, 4, 5, 90, 25, 26];
+let sum = sumOfTwoArray(arr_1, arr_2);
+console.log(sum);
