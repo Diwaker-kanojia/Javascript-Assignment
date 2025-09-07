@@ -29,3 +29,13 @@ function printText() {
   }
 }
 printText();
+
+//? Q3. Calculate the sum of all the numbers in the following array
+
+function calculateSum(arr) {
+  return arr.reduce((acc, value) => acc + value, 0);
+}
+
+var numbersArray = [1, 13, 22, 123, 49];
+let total = calculateSum(numbersArray);
+console.log(total);
