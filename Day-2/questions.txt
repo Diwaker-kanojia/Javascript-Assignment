@@ -1,0 +1,130 @@
+1. What are objects in javascript?
+Answer In javascript, Objects are the special data type used to store collections of data and more complex entities.
+Objects allow us to represent the real world entities using key-pair values.
+An object is a collection of properties, where each property is defined as a key (name) and a value.
+Eg : const user = {
+    firstName : "Diwaker",
+    lastName : "Kanojia"
+    age : 20,
+    city  : "New Delhi",
+    country : "India",
+}
+
+2. What are function?
+Answer In JavaScript, a function is a block of reusable code that performs a specific task.
+It allows you to write a piece of logic once and use it multiple times with different inputs.
+➡️ Type of Function 
+    1. Regular function.
+    Eg :function introduction(){
+          // statement
+        }
+    2. Arrow function.
+    Eg :const introduction = () => {
+          // statement
+        }
+    3. function expression.
+    Eg :const introduction = function (){
+          // statement
+        }
+
+3. What is an event loop and call stack ?
+Answer Call stack : 
+       - Call stack is place or space where all the js code is executed.
+       - Call stack track the execution of javascript.
+       - When ever the function is call it push to the call stack and after execution it will pop from call stack.
+       Event Loop : 
+       - Event loop allows js to write asynchronus tasks like timers, promises.
+       - Event loop is combination of call stack, webAPI, callback queue, microtask queue.
+       - Whenever we write the asynchronus code it will handled by browser and send to the webAPI container after it will send to callback queue and microtask queue and event loop continous monitoring that call stack is empty or not if call stack is empty then it will push to the call stack.
+
+4. What is the DOM ?
+Answer DOM stands for Document Object Model.
+       - It is a programming interface (provided by the browser) that represents a web page (HTML or XML) as a tree structure.
+       - Using the DOM, JavaScript can access, change, add, or delete elements and content in a webpage.
+
+5. What are arrow functions ?
+Answer - An arrow function is a shorter and cleaner way to write functions in JavaScript.
+       - An arrow function was introduced in ES6 (ECMAScript 2015).
+       - An arrow function uses the => (arrow) syntax instead of the function keyword.
+       Eg : // Normal function
+            function add(a, b) {
+              return a + b;
+            }
+
+            // Arrow function
+            const addArrow = (a, b) => a + b;
+
+6. What is the for-in loop in JavaScript ? Give its syntax.
+Answer - For-in loop in javascript is used to iterate  over the objects. 
+       - It iterate over the keys not over the values.
+       syntax : 
+        const student = {
+          name: "Diwaker",
+          age: 21,
+          course: "JavaScript"
+        };
+
+        for (let key in student) {
+          console.log(key + " : " + student[key]);
+        }
+
+7. What is difference between null and undefined and where to use what ?
+Answer undefined :
+       - Default value of a variable that is declared but not assigned.
+       - Set automatically by JavaScript engine.
+       - Type is undefined.
+        Example:
+          let x;
+          console.log(x) // undefined
+       
+       null :
+       - A variable that is intentionally assigned “no value”.
+       - Set explicitly by the programmer.
+       - Type is object (historical bug in JS).
+        Example:
+          let x = null;
+          console.log(x) // null
+
+       When to Use What
+       - Use undefined → when a variable is not initialized (default state).
+       - Use null → when you want to explicitly clear/reset a variable’s value.
+
+8. Write code to explain map and filter in arrays.
+Answer let numbers = [1, 2, 3, 4, 5];
+
+       // map → creates a new array by transforming each element
+       let squares = numbers.map(num => num * num);
+       console.log("Squares:", squares); 
+       // [1, 4, 9, 16, 25]
+
+       // filter → creates a new array with elements that pass a condition
+       let evens = numbers.filter(num => num % 2 === 0);
+       console.log("Even Numbers:", evens); 
+       // [2, 4]
+
+9. Given an array of 0's and 1's find out number of 0's.
+Answer let binaryArr = [0, 1, 1, 0, 1, 0, 0];
+
+       // filter out zeros
+       let zeros = binaryArr.filter(num => num === 0).length;
+
+       console.log("Number of 0's:", zeros);  
+          
+10. Given an array find out total no. of odd and even nos.
+Answer let arr = [10, 21, 32, 43, 54, 65];
+
+       let evenCount = arr.filter(num => num % 2 === 0).length;
+
+       console.log("Odd Numbers:", arr.length - evenCount);   // 3
+       console.log("Even Numbers:", evenCount); // 3
+
+11. Given a string find out number of vowels.
+Answer let str = "JavaScript Programming";
+
+       // convert to lowercase to check vowels
+       let vowels = str.toLowerCase().split("").filter(ch => "aeiou".includes(ch)).length;
+
+       console.log("Number of vowels:", vowels);  // 6
+
+
+           
