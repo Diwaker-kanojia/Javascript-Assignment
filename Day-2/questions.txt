@@ -13,7 +13,7 @@ Eg : const user = {
 2. What are function?
 Answer In JavaScript, a function is a block of reusable code that performs a specific task.
 It allows you to write a piece of logic once and use it multiple times with different inputs.
-➡️ Type of Function 
+   Type of Function 
     1. Regular function.
     Eg :function introduction(){
           // statement
@@ -125,6 +125,7 @@ Answer let str = "JavaScript Programming";
        let vowels = str.toLowerCase().split("").filter(ch => "aeiou".includes(ch)).length;
 
        console.log("Number of vowels:", vowels);  // 6
+
 
 
            
