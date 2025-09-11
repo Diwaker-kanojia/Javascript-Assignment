@@ -1,7 +1,6 @@
 Q1. Difference between " == " and “ === “ operators.
 Answer == (Equality Operator): Compares only the values of two variables, ignoring their data types.
-
-=== (Strict Equality Operator): Compares both the value and the data type of two variables.
+       === (Strict Equality Operator): Compares both the value and the data type of two variables.
 
 Q2. What are the differences between var, let and const ? 
 Answer var :
@@ -133,4 +132,5 @@ Answer 1. Local Scope
             inner();
           }
           outer();
+
 
